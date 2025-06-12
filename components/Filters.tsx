@@ -79,6 +79,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) =>
         <SelectItem value="Mohammed Fayis K">Mohammed Fayis K</SelectItem>
         <SelectItem value="Mohammed Safwan">Mohammed Safwan</SelectItem>
         <SelectItem value="Muhammed Arfaq">Muhammed Arfaq</SelectItem>
+        <SelectItem value="Mohammed jauhar ali">Mohammed jauhar ali	</SelectItem>
         <SelectItem value="Ribinsh">Ribinsh</SelectItem>
         <SelectItem value="Ajmal">Ajmal</SelectItem>
     </SelectContent>
