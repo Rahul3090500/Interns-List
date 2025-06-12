@@ -13,12 +13,19 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      // Disable a specific rule
-      "@typescript-eslint/no-unused-vars": "off",  // Example rule
-      "react/prop-types": "off",  // Disable PropTypes rule in React
-      "@next/next/no-img-element": "off", // Disable the rule for <img> tag in Next.js
-      "react-hooks/exhaustive-deps": "off", // Disable exhaustive deps warning in useEffect
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/prop-types": "off",
+      "@next/next/no-img-element": "off",
+      "react-hooks/exhaustive-deps": "off",
     },
+    overrides: [
+      {
+        files: ["*.ts", "*.tsx"],
+        rules: {
+          "@typescript-eslint/explicit-module-boundary-types": "off", // Disable for TS files
+        },
+      },
+    ],
   },
 ];
 
