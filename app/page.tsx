@@ -24,8 +24,8 @@ interface Intern {
 }
 
 const InternsPage: FC = () => {
-  const [interns] = useState<Intern[]>(internsData);  // Using the imported JSON data with explicit type
-  const [filteredInterns, setFilteredInterns] = useState<Intern[]>(internsData);
+const [interns] = useState<Intern[]>(internsData as Intern[]);
+const [filteredInterns, setFilteredInterns] = useState<Intern[]>(internsData as Intern[]);
 
   // States for filter criteria
   const [performance, setPerformance] = useState<'Exceeds Expectations' | 'Meets Expectations' | 'Needs Improvement' | 'Pending' | null>(null);
