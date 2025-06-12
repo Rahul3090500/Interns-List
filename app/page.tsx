@@ -1,16 +1,33 @@
-"use client"
-import { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import InternList from '../components/InternList';
 import Filters from '../components/Filters';
 import internsData from '../components/data.json'; 
 
+// Define the Intern type with specific values for performance
+interface Intern {
+  name: string;
+  teamLead: string;
+  role: string;
+  email: string;
+  performance: 'Exceeds Expectations' | 'Meets Expectations' | 'Needs Improvement' | 'Pending';
+  attendance: string;
+  gitHubProjectLink: string | null;
+  deploymentLink: string | null;
+  pdfLink: string | null;
+  remarks: {
+    website: string;
+    codeFE: string;
+    codeBE: string;
+    improvements: Array<string | number | React.ReactNode>;
+  };
+}
+
 const InternsPage: FC = () => {
-  // eslint-disable-line @typescript-eslint/no-unused-vars
-  const [interns] = useState(internsData);  // Using the imported JSON data
-  const [filteredInterns, setFilteredInterns] = useState(internsData);
+  const [interns] = useState<Intern[]>(internsData);  // Using the imported JSON data with explicit type
+  const [filteredInterns, setFilteredInterns] = useState<Intern[]>(internsData);
 
   // States for filter criteria
-  const [performance, setPerformance] = useState<string | null>(null);
+  const [performance, setPerformance] = useState<'Exceeds Expectations' | 'Meets Expectations' | 'Needs Improvement' | 'Pending' | null>(null);
   const [teamLead, setTeamLead] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
 
@@ -51,7 +68,7 @@ const InternsPage: FC = () => {
       <h1 className="text-3xl font-extrabold mb-4 text-gray-800">Interns List</h1>
       <Filters
         onFilter={(performance, teamLead) => {
-          setPerformance(performance);
+          setPerformance(performance as 'Exceeds Expectations' | 'Meets Expectations' | 'Needs Improvement' | 'Pending');
           setTeamLead(teamLead);
         }}
         searchQuery={searchQuery}
