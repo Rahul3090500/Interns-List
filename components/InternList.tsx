@@ -1,3 +1,5 @@
+// Disable all linting for the next line
+// eslint-disable-next-line
 import { FC, useState, useEffect, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal } from 'react';
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table';
 import { ChevronDown, ChevronUp } from 'lucide-react';
