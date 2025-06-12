@@ -45,12 +45,12 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any
             {/* Performance Filter */}
             <div className="flex flex-col">
                 <label htmlFor="performance" className="text-sm font-semibold text-gray-700 mb-2">Performance</label>
-                <Select onValueChange={handlePerformanceChange} value={performance ?? null}>
+                <Select onValueChange={handlePerformanceChange} value={performance ?? ""}>
                     <SelectTrigger className={`border border-gray-300 rounded-md p-2 hover:border-indigo-500 focus:ring-2 focus:ring-indigo-500 ${performance ? 'border-indigo-500' : ''}`}>
                         <SelectValue placeholder="Select Performance" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value={null}>All</SelectItem> {/* All option */}
+                        <SelectItem value="">All</SelectItem> {/* All option */}
                         <SelectItem value="Exceeds Expectations">Exceeds Expectations</SelectItem>
                         <SelectItem value="Meets Expectations">Meets Expectations</SelectItem>
                         <SelectItem value="Needs Improvement">Needs Improvement</SelectItem>
@@ -61,12 +61,12 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any
             {/* Team Lead Filter */}
             <div className="flex flex-col">
                 <label htmlFor="teamLead" className="text-sm font-semibold text-gray-700 mb-2">Team Lead</label>
-                <Select onValueChange={handleTeamLeadChange} value={teamLead ?? null}>
+                <Select onValueChange={handleTeamLeadChange} value={teamLead ?? ""}>
                     <SelectTrigger className={`border border-gray-300 rounded-md p-2 hover:border-indigo-500 focus:ring-2 focus:ring-indigo-500 ${teamLead ? 'border-indigo-500' : ''}`}>
                         <SelectValue placeholder="Select Team Lead" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value={null}>All</SelectItem> {/* All option */}
+                        <SelectItem value={""}>All</SelectItem> {/* All option */}
                         <SelectItem value="Mohammed Fayis K">Mohammed Fayis K</SelectItem>
                         <SelectItem value="Mohammed Safwan">Mohammed Safwan</SelectItem>
                         <SelectItem value="Muhammed Arfaq">Muhammed Arfaq</SelectItem>
