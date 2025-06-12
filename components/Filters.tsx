@@ -1,4 +1,5 @@
 "use client"
+//@ts-ignore
 import React, { useState, FC } from 'react';
 
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/components/ui/select';
