@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal } from 'react';
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -155,14 +155,14 @@ useEffect(() => {
                             <TableCell className="py-3 px-4 text-sm text-gray-500">{intern.teamLead}</TableCell>
                             <TableCell className="py-3 px-4 text-sm text-gray-500">{intern.role}</TableCell>
                             <TableCell className="py-3 px-4 text-sm text-gray-500">{intern.email}</TableCell>
-                            <TableCell className={`py-3 px-4 text-sm ${performanceColors[intern.performance]}`}>
+                            <TableCell className={`py-3 px-4 text-sm ${performanceColors[intern.performance as keyof typeof performanceColors]}`}>
                                 {intern.performance}
                             </TableCell>
                             <TableCell className="py-3 px-4 text-sm text-gray-500">{intern.attendance}</TableCell>
                             <TableCell className="py-3 px-4 text-sm overflow-hidden text-ellipsis">
                                 {renderLink(intern.gitHubProjectLink, 'GitHub Project')}
                             </TableCell>
-                            <TableCell className={`py-3 px-4 text-sm ${qualificationColors[intern.qualified === null ? 'null' : intern.qualified]}`}>
+                            <TableCell className={`py-3 px-4 text-sm ${qualificationColors[(intern.qualified === null ? 'null' : String(intern.qualified)) as 'true' | 'false' | 'null']}`}>
                                 {intern.qualified === null ? "Pending" : intern.qualified ? "Qualified" : "Not Qualified"}
                             </TableCell>
                             <TableCell className="py-3 px-4 text-sm">
@@ -186,7 +186,7 @@ useEffect(() => {
                         <li><strong>Code BE:</strong> {selectedIntern.remarks.codeBE}</li>
                         <li><strong>Improvements:</strong>
                             <ul className="mt-1 list-disc ml-4">
-                                {selectedIntern.remarks.improvements.map((item, idx) => (
+                                {selectedIntern.remarks.improvements.map((item: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, idx: Key | null | undefined) => (
                                     <li key={idx}>{item}</li>
                                 ))}
                             </ul>
