@@ -11,7 +11,7 @@ interface FiltersProps {
     setSearchQuery: (query: string) => void;
 }
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any) => {
+const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) => {
     const [performance, setPerformance] = useState<string | null>(null);
     const [teamLead, setTeamLead] = useState<string | null>(null);
     const handlePerformanceChange = (value: string | null) => {
@@ -24,7 +24,11 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any
         onFilter(performance || '', value || ''); // Pass filters to the parent, handling null as empty
     };
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const handleSearchChange = (e: any) => {
+    interface SearchChangeEvent {
+        target: { value: string };
+    }
+
+    const handleSearchChange = (e: SearchChangeEvent): void => {
         setSearchQuery(e.target.value); // Update search query
     };
 
