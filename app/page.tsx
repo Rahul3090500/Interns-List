@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, useEffect, useState } from 'react';
 import InternList from '../components/InternList';
 import Filters from '../components/Filters';
