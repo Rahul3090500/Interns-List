@@ -5,6 +5,7 @@ import Filters from '../components/Filters';
 import internsData from '../components/data.json'; 
 
 const InternsPage: FC = () => {
+  // eslint-disable-line @typescript-eslint/no-unused-vars
   const [interns, setInterns] = useState(internsData);  // Using the imported JSON data
   const [filteredInterns, setFilteredInterns] = useState(internsData);
 

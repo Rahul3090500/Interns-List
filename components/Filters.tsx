@@ -10,7 +10,7 @@ interface FiltersProps {
     searchQuery: string;
     setSearchQuery: (query: string) => void;
 }
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any) => {
     const [performance, setPerformance] = useState<string | null>(null);
     const [teamLead, setTeamLead] = useState<string | null>(null);
@@ -23,7 +23,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any
         setTeamLead(value);
         onFilter(performance || '', value || ''); // Pass filters to the parent, handling null as empty
     };
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleSearchChange = (e: any) => {
         setSearchQuery(e.target.value); // Update search query
     };
@@ -81,7 +81,3 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any
 };
 
 export default Filters;
-function useState<T>(arg0: null): [any, any] {
-    throw new Error('Function not implemented.');
-}
-

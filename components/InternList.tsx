@@ -19,7 +19,7 @@ const qualificationColors = {
 };
 
 const messageStyles = "text-gray-500 italic text-xs";
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const InternList: FC<{ interns: any[] }> = ({ interns }) => {
     const [sortedInterns, setSortedInterns] = useState(interns);
     const [sortConfig, setSortConfig] = useState<{ key: string; direction: 'asc' | 'desc' }>({
@@ -28,6 +28,7 @@ const InternList: FC<{ interns: any[] }> = ({ interns }) => {
     });
 
     const [popoverVisible, setPopoverVisible] = useState<boolean>(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [selectedIntern, setSelectedIntern] = useState<any | null>(null);
 
     const handleSort = (key: string) => {
@@ -188,6 +189,7 @@ useEffect(() => {
                         <li><strong>Code BE:</strong> {selectedIntern.remarks.codeBE}</li>
                         <li><strong>Improvements:</strong>
                             <ul className="mt-1 list-disc ml-4">
+                                {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
                                 {selectedIntern.remarks.improvements.map((item: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, idx: Key | null | undefined) => (
                                     <li key={idx}>{item}</li>
                                 ))}
