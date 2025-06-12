@@ -1,8 +1,6 @@
 "use client"
-// Disable all linting for the next line
-// eslint-disable-next-line
-import React, { useState, FC } from 'react';
 
+import React, { useState, FC } from 'react';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/components/ui/select';
 
 interface FiltersProps {
@@ -10,24 +8,29 @@ interface FiltersProps {
     searchQuery: string;
     setSearchQuery: (query: string) => void;
 }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) => {
     const [performance, setPerformance] = useState<string | null>(null);
     const [teamLead, setTeamLead] = useState<string | null>(null);
+
+    // Handle performance filter change
     const handlePerformanceChange = (value: string | null) => {
         setPerformance(value);
         onFilter(value || '', teamLead || ''); // Pass filters to the parent, handling null as empty
     };
 
+    // Handle team lead filter change
     const handleTeamLeadChange = (value: string | null) => {
         setTeamLead(value);
         onFilter(performance || '', value || ''); // Pass filters to the parent, handling null as empty
     };
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
+    // Define the event type for the search input change
     interface SearchChangeEvent {
         target: { value: string };
     }
 
+    // Handle search query change
     const handleSearchChange = (e: SearchChangeEvent): void => {
         setSearchQuery(e.target.value); // Update search query
     };
