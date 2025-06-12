@@ -21,6 +21,7 @@ interface Intern {
     codeBE: string;
     improvements: Array<string | number | React.ReactNode>;
   };
+  qualified: boolean; // Add this property to match the expected type
 }
 
 const InternsPage: FC = () => {
