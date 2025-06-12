@@ -1,5 +1,6 @@
 "use client"
-import { FC, useState } from 'react';
+import React, { useState, FC } from 'react';
+
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/components/ui/select';
 
 interface FiltersProps {
@@ -8,10 +9,9 @@ interface FiltersProps {
     setSearchQuery: (query: string) => void;
 }
 
-const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) => {
+const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }:any) => {
     const [performance, setPerformance] = useState<string | null>(null);
     const [teamLead, setTeamLead] = useState<string | null>(null);
-
     const handlePerformanceChange = (value: string | null) => {
         setPerformance(value);
         onFilter(value || '', teamLead || ''); // Pass filters to the parent, handling null as empty
@@ -22,7 +22,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) =>
         onFilter(performance || '', value || ''); // Pass filters to the parent, handling null as empty
     };
 
-    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleSearchChange = (e: any) => {
         setSearchQuery(e.target.value); // Update search query
     };
 
@@ -44,7 +44,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) =>
             {/* Performance Filter */}
             <div className="flex flex-col">
                 <label htmlFor="performance" className="text-sm font-semibold text-gray-700 mb-2">Performance</label>
-                <Select onValueChange={handlePerformanceChange} value={performance}>
+                <Select onValueChange={handlePerformanceChange} value={performance ?? null}>
                     <SelectTrigger className={`border border-gray-300 rounded-md p-2 hover:border-indigo-500 focus:ring-2 focus:ring-indigo-500 ${performance ? 'border-indigo-500' : ''}`}>
                         <SelectValue placeholder="Select Performance" />
                     </SelectTrigger>
@@ -60,7 +60,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) =>
             {/* Team Lead Filter */}
             <div className="flex flex-col">
                 <label htmlFor="teamLead" className="text-sm font-semibold text-gray-700 mb-2">Team Lead</label>
-                <Select onValueChange={handleTeamLeadChange} value={teamLead}>
+                <Select onValueChange={handleTeamLeadChange} value={teamLead ?? null}>
                     <SelectTrigger className={`border border-gray-300 rounded-md p-2 hover:border-indigo-500 focus:ring-2 focus:ring-indigo-500 ${teamLead ? 'border-indigo-500' : ''}`}>
                         <SelectValue placeholder="Select Team Lead" />
                     </SelectTrigger>
@@ -79,3 +79,7 @@ const Filters: FC<FiltersProps> = ({ onFilter, searchQuery, setSearchQuery }) =>
 };
 
 export default Filters;
+function useState<T>(arg0: null): [any, any] {
+    throw new Error('Function not implemented.');
+}
+
