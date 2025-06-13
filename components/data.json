@@ -11,150 +11,20 @@
     "deploymentLink": null,
     "pdfLink": "/pdf/Shibin_t.pdf",
     "remarks": {
-      "website": "9/10",
-      "codeFE": "9/10",
-      "codeBE": "8/10",
-      "improvements": ["Code splitting could have been better especially in BE.",
+      "website": "9",
+      "codeFE": "9",
+      "codeBE": "8",
+      "improvements": [
+        "Code splitting could have been better especially in BE.",
         "Error handling could have been better. (Show in user side specific error messages if any error occurs)",
-        "Website need optimisation to make it little more faster when loading and doing API calls."]
-    }
-    },
-  {
-    "name": "Parasakthikumar K",
-    "teamLead": "Mohammed Fayis K",
-    "role": "AI Product Developer",
-    "email": "parasakthikumark.larklabsai@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": null,
-    "deploymentLink": null,
-    "pdfLink": null,
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
-    }
-  },
-  {
-    "name": "Balavedhaa S",
-    "teamLead": "Mohammed Fayis K",
-    "role": "Software Developer Intern",
-    "email": "Balavedhaa.larkLabsAI@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": null,
-    "deploymentLink": null,
-    "pdfLink": null,
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
-    }
-  },
-  {
-    "name": "Hemanth kumar J",
-    "teamLead": "Mohammed Safwan",
-    "role": "Software developer Intern",
-    "email": "hemanth.larklabsai@gmail.com",
-    "performance": "Pending",
-    "attendance": "98%",
-    "qualified": null,
-    "gitHubProjectLink": "https://github.com/J-Hemanth-kumar/TeamTasker.git",
-    "deploymentLink": null,
-    "pdfLink": null,
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
-    }
-  },
-  {
-    "name": "Ragul Adhithya",
-    "teamLead": "Muhammed Arfaq",
-    "role": "Software Developer Intern",
-    "email": "raguladhithya.larklabsai@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": "https://github.com/raguladhithyam/Team-Tasker",
-    "deploymentLink": "https://teamtasker.raguladhithya.in/",
-    "pdfLink": "/pdf/Ragul_Adhithya_M.pdf",
-    "remarks": {
-      "website": "9/10",
-      "codeFE": "8/10",
-      "codeBE": "7/10",
-    "improvements": [
-      "Areas for Improvement:",
-      "Code Splitting (Backend): The backend could benefit from better code organization and modularization to improve readability and maintainability.",
-      "Error Handling: Consider implementing more robust error handling. Specifically, ensure that clear and actionable error messages are surfaced to the user where applicable, rather than generic messages.",
-      "Performance Optimization: While the website is functional and visually solid, there’s room for improvement in terms of performance. Optimizing API calls and reducing initial load time would enhance the overall user experience.",
-      "Overall, solid effort — with a few key improvements, this can reach an even higher standard."
-    ]
-    }
-  },
-  {
-    "name": "Vigneswaran S",
-    "teamLead": "Mohammed Fayis K",
-    "role": "Software Developer Intern",
-    "email": "vigneswaran.larklabsai@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": null,
-    "deploymentLink": null,
-    "pdfLink": null,
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
-    }
-  },
-  {
-    "name": "Mukilarasu R",
-    "teamLead": "Mohammed Fayis K",
-    "role": "AI product Intern",
-    "email": "mukilarasu.larkLabsAI@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": null,
-    "deploymentLink": null,
-    "pdfLink": null,
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
-    }
-  },
-  {
-    "name": "Sirajudeen G",
-    "teamLead": "Ajmal",
-    "role": "Software developer Intern",
-    "email": "Sirajudeen.larklabsai@gmail.com",
-    "performance": "Pending",
-    "attendance": "100%",
-    "qualified": null,
-    "gitHubProjectLink": "https://github.com/Siraj004/Task_Manager",
-    "deploymentLink": "https://task-manager-ehbh.onrender.com",
-    "pdfLink": "/pdf/Sirajudeen_G.pdf",
-    "remarks": {
-      "website": "",
-      "codeFE": "",
-      "codeBE": "",
-      "improvements": []
+        "Website need optimisation to make it little more faster when loading and doing API calls."
+      ]
     }
   },
   {
     "name": "Nishanth S",
     "teamLead": "Ribinsh",
-    "role": "Software developer Intern",
+    "role": "Software Developer Intern",
     "email": "nishanth.larklabsai@gmail.com",
     "performance": "Meets Expectations",
     "attendance": "100%",
@@ -170,16 +40,129 @@
     }
   },
   {
+    "name": "Balavedhaa S",
+    "teamLead": "Mohammed Fayis K",
+    "role": "Software Developer Intern",
+    "email": "Balavedhaa.larkLabsAI@gmail.com",
+    "performance": "Meets Expectations",
+    "attendance": "100%",
+    "qualified": true,
+    "gitHubProjectLink": null,
+    "deploymentLink": null,
+    "pdfLink": null,
+    "remarks": {
+      "website": "",
+      "codeFE": "",
+      "codeBE": "",
+      "improvements": []
+    }
+  },
+  {
+    "name": "Parasakthikumar K",
+    "teamLead": "Mohammed Fayis K",
+    "role": "AI Product Developer",
+    "email": "parasakthikumark.larklabsai@gmail.com",
+    "performance": "Meets Expectations",
+    "attendance": "100%",
+    "qualified": true,
+    "gitHubProjectLink": null,
+    "deploymentLink": null,
+    "pdfLink": null,
+    "remarks": {
+      "website": "",
+      "codeFE": "",
+      "codeBE": "",
+      "improvements": []
+    }
+  },
+  {
+    "name": "Ragul Adhithya",
+    "teamLead": "Muhammed Arfaq",
+    "role": "Software Developer Intern",
+    "email": "raguladhithya.larklabsai@gmail.com",
+    "performance": "Meets Expectations",
+    "attendance": "100%",
+    "qualified": true,
+    "gitHubProjectLink": "https://github.com/raguladhithyam/Team-Tasker",
+    "deploymentLink": "https://teamtasker.raguladhithya.in/",
+    "pdfLink": "/pdf/Ragul_Adhithya_M.pdf",
+    "remarks": {
+      "website": "9",
+      "codeFE": "8",
+      "codeBE": "7",
+      "improvements": [
+        "Code Splitting (Backend): The backend could benefit from better code organization and modularization to improve readability and maintainability.",
+        "Error Handling: Consider implementing more robust error handling. Specifically, ensure that clear and actionable error messages are surfaced to the user where applicable, rather than generic messages.",
+        "Performance Optimization: While the website is functional and visually solid, there’s room for improvement in terms of performance. Optimizing API calls and reducing initial load time would enhance the overall user experience.",
+        "Overall, solid effort — with a few key improvements, this can reach an even higher standard."
+      ]
+    }
+  },
+  {
+    "name": "Mukilarasu R",
+    "teamLead": "Mohammed Fayis K",
+    "role": "AI Product Intern",
+    "email": "mukilarasu.larkLabsAI@gmail.com",
+    "performance": "Needs Improvement",
+    "attendance": "100%",
+    "qualified": false,
+    "gitHubProjectLink": null,
+    "deploymentLink": null,
+    "pdfLink": null,
+    "remarks": {
+      "website": "",
+      "codeFE": "",
+      "codeBE": "",
+      "improvements": []
+    }
+  },
+  {
+    "name": "Vigneswaran S",
+    "teamLead": "Mohammed Fayis K",
+    "role": "Software Developer Intern",
+    "email": "vigneswaran.larklabsai@gmail.com",
+    "performance": "Needs Improvement",
+    "attendance": "100%",
+    "qualified": false,
+    "gitHubProjectLink": null,
+    "deploymentLink": null,
+    "pdfLink": null,
+    "remarks": {
+      "website": "",
+      "codeFE": "",
+      "codeBE": "",
+      "improvements": []
+    }
+  },
+  {
     "name": "Ruksaana R",
     "teamLead": "Mohammed Fayis K",
     "role": "Software Developer Intern",
     "email": "ruksaana.larkLabsAI@gmail.com",
-    "performance": "Pending",
+    "performance": "Needs Improvement",
     "attendance": "100%",
-    "qualified": null,
+    "qualified": false,
     "gitHubProjectLink": null,
     "deploymentLink": null,
     "pdfLink": null,
+    "remarks": {
+      "website": "",
+      "codeFE": "",
+      "codeBE": "",
+      "improvements": []
+    }
+  },
+  {
+    "name": "Sirajudeen G",
+    "teamLead": "Ajmal",
+    "role": "Software Developer Intern",
+    "email": "Sirajudeen.larklabsai@gmail.com",
+    "performance": "Needs Improvement",
+    "attendance": "100%",
+    "qualified": false,
+    "gitHubProjectLink": "https://github.com/Siraj004/Task_Manager",
+    "deploymentLink": "https://task-manager-ehbh.onrender.com",
+    "pdfLink": "/pdf/Sirajudeen_G.pdf",
     "remarks": {
       "website": "",
       "codeFE": "",
